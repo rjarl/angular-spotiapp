@@ -54,9 +54,9 @@ export class SpotifyService {
   }
 
   getToken() {
-    // client_id: 57f7b0e9e187445fab95464fde6cdda0
-    // client_secret: 3a792ad173754239b013c0c12f41b3aa
-    const url = 'https://spotify-get-token.herokuapp.com/spotify/57f7b0e9e187445fab95464fde6cdda0/3a792ad173754239b013c0c12f41b3aa';
+    const client_id = 'iiiiiiiiiii';
+    const client_secret =  'sssssssssssss';
+    const url = `https://spotify-get-token.herokuapp.com/spotify/${ client_id }/${ client_secret }`;
     return this.http.get(url);
     /*.subscribe( (resp: any) => {
       this.spotifyToken = resp.access_token;
